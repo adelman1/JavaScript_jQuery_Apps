@@ -32,6 +32,18 @@ $(document).ready(function() {
 			//submit the form if all of the fields are valid
 			$("#email_form").submit(); 
 		}
-	}); // end click
+	}); // end click1
+	
+	$("#clear_entries").click(function() {
+		$(":text").val("");
+		$(":text").next().text("*");
+		$("#email_address1").focus();
+	}); //end click2
+	
+	$(":text").dblclick(function() {
+		// $("#clear_entries").click();
+		$(this).val("");
+	});
+	
 	$("#email_address1").focus();
 }); // end ready

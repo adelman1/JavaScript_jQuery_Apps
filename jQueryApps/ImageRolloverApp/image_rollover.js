@@ -10,13 +10,23 @@ $(document).ready(function () {
 		});
 		
 		//event handler
-		$(this).hover(
+		// $(this).hover(
+			// function() {
+				// $(this).attr("src", newURL);
+			// },
+			// function() {
+				// $(this).attr("src", oldURL);
+			// }
+		// ); // end hover
+		$(this).mouseover(
 			function() {
 				$(this).attr("src", newURL);
-			},
+			}
+		);
+		$(this).mouseout(
 			function() {
 				$(this).attr("src", oldURL);
 			}
-		); // end hover
+		);
 	}); // end each
 }); // end ready
