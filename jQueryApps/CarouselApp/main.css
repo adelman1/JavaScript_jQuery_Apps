@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 475px;
+    height: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 3px solid blue;
+}
+h1, h2, ul, p {
+	margin: 0;
+	padding: 0;
+}
+h1 {
+	padding-bottom: .25em;
+	color: blue;
+}
+#display_panel {
+	width: 300px;
+	overflow: hidden;
+	float: left;
+	height: 125px; }
+#image_list {
+	position: relative;
+	left: 0px;
+	width: 900px;
+	list-style: none; }
+#image_list li {
+	float: left;
+	width: 100px; }
+#image_list li img {
+	width: 95px; }
