@@ -18,9 +18,9 @@ $(document).ready(function() {
 	$("aside a").removeAttr("id");
 	
 	// add the href attribute to each <a> tag
-	$("aside a").each(function(index) {
-		var href = "heading" + (index + 1);
-		$(this).attr("href", href);
+	$("aside a").attr("href", function(index) {
+		var href = "#heading" + (index + 1);
+		return href;
 	});
 	
 	// wrap <a> tag around h1 text
