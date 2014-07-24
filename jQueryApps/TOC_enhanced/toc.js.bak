@@ -27,15 +27,21 @@ $(document).ready(function() {
 	$("aside a").attr("href", function(index) {
 		var href = "#heading" + (index + 1);
 		return href;
-    });
-
-	// insert back to top tag at end of toc
-    $("aside").append("<br><a href='#heading1'>Back to top</a>");
-		
-	// indent all paragraphs except the first ones after h2s
-	$("article p").nextUntil("h2").css("text-indent", "1.5em");
-	// $("article p").css("text-indent", "1.5em");
-	// $("article h2 + p").css("text-indent", 0);
+	});
+	
+	// insert a "back to top" <a> tag at the end of TOC
+	$("aside a:last").after("<a href='#top'>Back to top</a>");
+	$("aside a:last").before("<br>");
+	
+	// wrap <a> tag around h1 text
+	$("h1").wrapInner("<a id='top'></a>");
+	
+	// insert "back to top" <a> tags after each topic
+	$("article h2").before("<a href='#heading1'>Back to top</a>");
+	$("article a:first").remove();
+	$("article p").css("text-indent", "1.5em");
+	$("article h2 + p").css("text-indent", 0);
+	$("article p:last").after("<a href='#top'>Back to top</a>");
 	
 	// change the CSS for the selected topic and move the TOC
 	$("aside a").click(function() {
@@ -54,8 +60,7 @@ $(document).ready(function() {
 		var articleHeight = $("article").height();
 		if ( (h2Offset + asideHeight) <= articleHeight) {
 			asideOffset = h2Offset;
-		} 
-		else {
+		} else {
 			asideOffset = articleHeight - asideHeight;
 		}
 		$("aside").css("top", asideOffset);
