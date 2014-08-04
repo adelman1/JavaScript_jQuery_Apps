@@ -7,9 +7,9 @@ body {
 	line-height: 25px;
 	background-color: #dfe3e6;
 }
-#container, header, #slideshow, footer {
+#container {
+	background: #fff;
 	width: 697px;
-	clear: both;
 }
 section#container {
 	background-color: #fff;
@@ -38,8 +38,14 @@ nav ul li a:link, nav ul li a:visited, #content h2 {
 	color: #cc1c0d;
 }
 nav ul li a:link, nav ul li a:visited {
+	width: 110px;
 	margin-bottom: 15px;
+	text-decoration:none;
 	display: block;
+}				
+nav ul li a:hover {
+	color: #000;
+	background-color: #ccc;
 }
 #content {
 	width: 447px;
@@ -48,8 +54,24 @@ nav ul li a:link, nav ul li a:visited {
 }
 #content img {
 	float: left;
+/* CONTACT US FORM */
+
+/* CONTACT US FORM */
+label {
+	display: block;
+	width: 205px;
+	float:left;
+}
+input, select, textarea {
+	width: 175px;
+	margin-bottom: .5em;
+}
+#submitbutton {
+	height: 35px;
+	margin: 25px 0 15px 0;
 }
 footer {
 	height: 35px;
 	background: url('images/footer.gif');
+	clear: both;
 }
