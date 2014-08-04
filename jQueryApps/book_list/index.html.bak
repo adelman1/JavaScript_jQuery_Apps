@@ -15,9 +15,10 @@
 		$("#book").button();
 
 		$("#book").click(function() {
-			$("#dialog").dialog({
-				modal: true
-			});
+				$("#dialog").dialog({
+					modal: true,
+					autoOpen: false
+				});
 		});
 	});
 	</script>

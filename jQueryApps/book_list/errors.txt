@@ -1,0 +1,14 @@
+Uncaught Error: ASP.NET Ajax client-side framework failed to load. VM6140:3
+2
+Uncaught ReferenceError: Sys is not defined VM6141:3
+Uncaught TypeError: undefined is not a function
+
+Uncaught Sys.InvalidOperationException: Sys.InvalidOperationException: The PageRequestManager cannot be initialized more than once. ScriptResource.axd?d=_t8KKbQxsffc3zNsPRW_bhsnWV_sLOWplW1UIOZY7lNr6pXsq_f39YbVDxGSp7eTo1S901obCVmEwU…:222
+Uncaught Sys.InvalidOperationException: Sys.InvalidOperationException: Two components with the same id 'ctl00_ContentPlaceHolder1_featured_Timer1' can't be added to the application. ScriptResource.axd?d=_t8KKbQxsffc3zNsPRW_bhsnWV_sLOWplW1UIOZY7lNr6pXsq_f39YbVDxGSp7eTo1S901obCVmEwU…:222
+Uncaught TypeError: undefined is not a function script.js:18
+Uncaught Sys.ArgumentTypeException: Sys.ArgumentTypeException: Object of type 'Sys.Net.XMLHttpExecutor' cannot be converted to type 'Sys.Net.WebRequestExecutor'.
+Parameter name: response ScriptResource.axd?d=_t8KKbQxsffc3zNsPRW_bhsnWV_sLOWplW1UIOZY7lNr6pXsq_f39YbVDxGSp7eTo1S901obCVmEwU…:222
+7
+Uncaught TypeError: Cannot set property 'value' of undefined 
+
+--Removed errors by re-doing Map & FeaturedCompaniesSection pages -8/4/14
