@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="us">
+<head>
+	<meta charset="utf-8">
+	<title>Text-area Animation</title>
+	<link href="jquery-ui.css" rel="stylesheet">
+	<style>
+	
+	</style>
+</head>
+<body>
+
+<h1>Customer Experience Survey</h1>
+<p> Please help us improve our service by sending us your comments:</p>
+<textarea id="comments" style="width:350px;height:125px;"></textarea><br>
+<a href="#" id="grow_textarea">Increase text area</a>
+
+<script src="external/jquery/jquery.js"></script>
+<script src="jquery-ui.js"></script>
+<script>
+	$(document).ready(function() {
+		$("#grow_textarea").click(function() {
+			$("#comments").animate({
+				width: 500,
+				height: 200,
+				backgroundColor: "#ededed",
+				color: "green"
+			}, 1000 );
+		});
+	});
+</script>
+</body>
+</html>

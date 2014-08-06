@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="us">
+<head>
+	<meta charset="utf-8">
+	<title>Changing text size using class transitions</title>
+	<link href="jquery-ui.css" rel="stylesheet">
+	<style>
+		.medium {font-size: 100%;}
+		.large {font-size: 125%}
+		.x_large {font-size: 150%}
+	</style>
+</head>
+<body>
+
+<div id="class_transitions">
+	Change text size:
+	<input type="button" id="button1" value="Medium">
+	<input type="button" id="button2" value="Large">
+	<input type="button" id="button3" value="X-Large"><br>
+	<h2>Welcome</h2>
+	<p id="p1">
+	With innovative approaches and advanced methodologies, Vecta Corporation
+	provides scalable business solutions to help companies achieve success 
+	through revenue increase, cost management, and user satisfaction.</p>
+</div>
+
+<script src="external/jquery/jquery.js"></script>
+<script src="jquery-ui.js"></script>
+<script>
+	$(document).ready(function() {
+		$("#button1").click(function() { setSize("medium"); });
+		$("#button2").click(function() { setSize("large"); });
+		$("#button3").click(function() { setSize("x_large"); });
+		
+		function setSize(size) {
+			$("#p1").removeClass();
+			$("#p1").addClass(size, 1000);
+		}
+	});
+</script>
+</body>
+</html>

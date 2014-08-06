@@ -11,36 +11,51 @@ body {
     font-size: 87.5%;
 	width: 650px;
 	margin: 0 auto;
-	border: 3px solid blue;
 }
 section {
 	padding: 15px 25px;
+	background-color: #fff;
 }
-h1 { 
-	font-size: 150%;
+fieldset {
+	width: 415px;
+	padding: 10px;
+}
+label {
+	float: left;
+	width: 210px;
+}
+input, select {
+	width: 200px;
+    margin-bottom: .5em;
 }
 h2 {
-	font-size: 120%;
-	padding: .25em 0 .25em 25px;
-	cursor: pointer;
-	background: url(images/plus.png) no-repeat left center;
-}
-h2.minus {
-	background: url(images/minus.png) no-repeat left center;
-}
-div {
-	display: none;
-}
-div.open {
-	display: block;
-}
-ul {
-	padding-left: 45px;
-}
-li {
-	padding-bottom: .25em;
+	margin-bottom: .5em;
 }
 p {
-	padding-bottom: .25em;
-	padding-left: 25px;
+	margin-bottom: .5em;
+}
+textarea {
+	width: 410px;
+	height: 60px;
+}
+.ui-resizable-se {
+	bottom: 14px;
+	right: 2px;
+}
+#solutions {
+	margin-top: 15px;
+	margin-left: 25px;
+	list-style-type: none;
+}
+#solutions li {
+	float: left;
+	width: 70px;
+	margin-left: 25px;
+	margin-right: 25px;
+}
+#selected {
+	clear: both;
+}
+.ui-selected {
+	border: 1px solid #000;
 }
