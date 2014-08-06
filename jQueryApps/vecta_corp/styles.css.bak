@@ -81,11 +81,6 @@ input, select, textarea {
 	width: 175px;
     margin-bottom: .5em;
 }
-#content {
-	width: 447px;
-	float: left;
-	padding-right: 15px;
-}
 #content img {
 	float: left;
 }
@@ -99,6 +94,11 @@ textarea {
 .ui-resizable-se {
 	bottom: 14px;
 	right: 2px;
+}
+#content {
+	width: 447px;
+	float: left;
+	padding-right: 15px;
 }
 #submitbutton {
 	height: 35px;
