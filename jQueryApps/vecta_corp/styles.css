@@ -1,26 +1,35 @@
 article, aside, figure, footer, header, nav, section {
     display: block;
 }
+* {
+	margin: 0;
+	padding: 0;
+}
 body {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 0.8em;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+	width: 650px;
+	margin: 0 auto;
 	line-height: 25px;
 	background-color: #dfe3e6;
 }
-#container {
-	background: #fff;
-	width: 697px;
+section {
+	padding: 15px 25px;
+	background-color: #fff;
 }
 section#container {
 	background-color: #fff;
+	width: 697px;
 	margin: 15px auto 0 auto;
 }
 header {
 	height: 100px;
 	background: url('images/logo.gif') no-repeat 25px;
 }
-#slideshow {
-	height: 240px;
+#container {
+	background: #fff;
+	width: 697px;
+	margin: 15px auto 0 auto;
 }
 nav	{
 	width: 235px;
@@ -38,10 +47,10 @@ nav ul li a:link, nav ul li a:visited, #content h2 {
 	color: #cc1c0d;
 }
 nav ul li a:link, nav ul li a:visited {
+	display: block;
 	width: 110px;
 	margin-bottom: 15px;
 	text-decoration:none;
-	display: block;
 }				
 nav ul li a:hover {
 	color: #000;
@@ -50,25 +59,75 @@ nav ul li a:hover {
 #content {
 	width: 447px;
 	float: left;
+	background-color: #fff;
 	padding-right: 15px;
 }
-#content img {
-	float: left;
-/* CONTACT US FORM */
-
-/* CONTACT US FORM */
+h2 {
+	margin-bottom: .5em;
+}
+p {
+	margin-bottom: .5em;
+}
+fieldset {
+	width: 415px;
+	padding: 10px;
+}
 label {
-	display: block;
-	width: 205px;
+	width: 200px;
+	float: left;
 	float:left;
 }
 input, select, textarea {
 	width: 175px;
-	margin-bottom: .5em;
+    margin-bottom: .5em;
+}
+#content {
+	width: 447px;
+	float: left;
+	padding-right: 15px;
+}
+#content img {
+	float: left;
+}
+#slideshow {
+	height: 240px;
+}
+textarea {
+	width: 410px;
+	height: 60px;
+}
+.ui-resizable-se {
+	bottom: 14px;
+	right: 2px;
 }
 #submitbutton {
 	height: 35px;
 	margin: 25px 0 15px 0;
+}
+#solutions_menu {
+	width: 115px;
+	display: none;
+	margin: 0 0 15px 15px;
+}
+#solutions_menu a:link, #solutions_menu a:visited {
+	font-size: 12px;
+	font-weight: bold;
+	background: #dfe3e6 url('images/bullet.gif') no-repeat 7px center;
+	padding: 3px 0 3px 20px;
+	border: solid #929ca4 1px;
+	color: #cc1c0d;
+	display: block;
+	text-decoration: none;
+	margin-bottom: 5px;
+}
+#solutions_menu a:hover	{
+	color: black;
+}
+#selected {
+	clear: both;
+}
+.ui-selected {
+	border: 1px solid #000;
 }
 footer {
 	height: 35px;
