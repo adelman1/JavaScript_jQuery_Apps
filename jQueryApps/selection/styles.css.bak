@@ -8,9 +8,11 @@ article, aside, figure, figcaption, footer, header, nav, section {
 }
 body {
 	font-family: Verdana, Arial, Helvetica, sans-serif;
-    font-size: 87.5%;
+    font-size: 0.8em;
 	width: 650px;
 	margin: 0 auto;
+	line-height: 25px;
+	background-color: #dfe3e6;
 }
 section {
 	padding: 15px 25px;
