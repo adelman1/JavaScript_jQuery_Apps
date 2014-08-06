@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="us">
+<head>
+	<meta charset="utf-8">
+	<title>jQuery UI Example Page</title>
+	<link href="jquery-ui.css" rel="stylesheet">
+	<link href="styles.css" rel="stylesheet">
+</head>
+<body>
+	<section>
+		<div id="vprospect"><img src="images/vprospect.png"></div>
+		<div id="vconvert"><img src="images/vconvert.png"></div>
+		<div id="vretain"><img src="images/vretain.png"></div>
+		<div id="cart"><p>Your Cart</p></div>
+	</section>
+
+<script src="external/jquery/jquery.js"></script>
+<script src="jquery-ui.js"></script>
+<script>
+	$(document).ready(function() {
+		$("#vprospect, #vconvert, #vretain").draggable({ cursor: "move" });
+		$("#cart").droppable({
+			drop: function() {
+				$(this).addClass("ui-state-highlight").find("p").html("vSolution added!");
+			}
+		});
+	});
+</script>
+</body>
+</html>
