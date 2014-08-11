@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Twitter JSON API : Display Simple Tweets</title>
+    <link href="styles.css" type="text/css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			var url = "https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=twitterapi&count=2";
+			var tweet = "";
+			
+			$.getJSON(url, function(data) {
+				// Loop through each feed entry
+				$.each(data, function(i,item) {
+					tweet += item.text + "<br><br>";
+				});
+				$("#twitter").html("<h3>Microsoft&rsquo;s Twitter Feed</h3>").append(tweet);
+			});
+		});
+	</script>
+</head>
+<body>
+<section id="container">
+	<section id="content">
+		<div id="twitter"></div>
+	</section>
+</section>
+</body>
+</html>
+	
